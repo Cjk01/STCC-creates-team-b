@@ -1,5 +1,32 @@
 <?php
 //Verify info here
+include("auth/config.php");
+if($_SERVER["REQUEST_METHOD"] == "POST") { 
+//now to check if the entered values fit the proper format
+$first = $_POST['fname'];
+$last = $_POST['lname'];
+$email = $_POST['Email'];
+$pw = $_POST['password'];
+function endsWith($string, $endString) 
+{ 
+    $len = strlen($endString); 
+    if ($len == 0) { 
+        return true; 
+    } 
+    return (substr($string, -$len) === $endString); 
+} 
+if(endsWith($email , 'student.stcc.edu') and strlen($first) != 0 and strlen($last ) != 0 and strlen($pw) > 6){
+// when the 'create account' button is pressed, all the input values are inserted into the db if they are in the correct format
+$insert = "INSERT INTO users (firstName, lastName, email, password, groups) VALUES ('$first', '$last', '$email', MD5('$pw'), '')";
+
+if (mysqli_query($db, $insert)) {
+    echo "Account created successfully";
+  } else {
+    echo "Error: " . $insert . "<br>" . mysqli_error($db);
+  }
+}
+}
+
 ?>
 <!DOCTYPE HTML>
 <head>
@@ -17,13 +44,13 @@
 <form action="" method="post">
 <div class="group">
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="Email" name="First Name">
+            <input class="mdl-textfield__input" type="text" id="Email" name="fname">
             <label class="mdl-textfield__label" for="password">First Name</label>
         </div>
     </div>
     <div class="group">
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="Email" name="Last Name">
+            <input class="mdl-textfield__input" type="text" id="Email" name="lname">
             <label class="mdl-textfield__label" for="password">Last Name</label>
         </div>
     </div>
