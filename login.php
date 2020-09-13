@@ -1,5 +1,5 @@
 <?php
-include("config.php");
+include("auth/config.php");
 session_start();
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
@@ -18,6 +18,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     // If result matched $myusername and $mypassword, table row must be 1 row
 
     if(!isset($_SESSION['uname'])){
+        session_start();
+        $_SESSION["username"] = $myusername;
+        echo $_SESSION["username"];
         header('Location: home/');
 
     }
