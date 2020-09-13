@@ -1,5 +1,6 @@
 <?php
 include('../auth/session.php');
+$username = '';
 ?>
 <!doctype html>
 <!--
@@ -70,7 +71,7 @@ include('../auth/session.php');
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3><?php
+          <h3 id = "username" name="username"><?php
               echo "User: " , $login_session;
            ?><br>Name &amp; Title</h3>
         </div>

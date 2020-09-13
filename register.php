@@ -21,20 +21,22 @@ if(endsWith($email , 'student.stcc.edu') and strlen($first) != 0 and strlen($las
 $insert = "INSERT INTO users (firstName, lastName, email, password, groups) VALUES ('$first', '$last', '$email', MD5('$pw'), '')";
 
 if (mysqli_query($db, $insert)) {
-    echo "Account created successfully";
-  } else {
+    echo '<script type="text/javascript">',
+    'window.onload = function() {
+    SuccessAdd();
+    }',
+    '</script>';  } else {
     echo "Error: " . $insert . "<br>" . mysqli_error($db);
   }
 }
 else {
-//    echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
-//    echo 'setTimeout(function () { swal("Error ' . $email . '","is invalid, please use an email from STCC","error");';
     echo '<script type="text/javascript">',
     'window.onload = function() {
     ErrorAdd();
     }',
     '</script>';
 }
+
 }
 
 ?>
@@ -82,8 +84,12 @@ else {
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
         Create Account
     </button>
-    
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"type="button" onclick="window.location.href='login.php'">
+        Login
+    </button>
 </form>
+<div class="group">
+
 <footer>
     <img src="assets/images/Springfield_Technical_Community_College_(STCC)_seal.png" alt="STCC Logo">
     <p>Welcome to STCC Social Media login</p>

@@ -1,25 +1,32 @@
 <?php
 include("auth/config.php");
+include('assets/reqJSSA2.php');
 session_start();
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
 
-    $myusername = mysqli_real_escape_string($db,$_POST['Email']);
-    $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+    $myusername = mysqli_real_escape_string($db, $_POST['Email']);
+    $mypassword = mysqli_real_escape_string($db, $_POST['password']);
 
     $sql = "SELECT email FROM users WHERE email = '$myusername' and password = MD5('$mypassword')";
-    $result = mysqli_query($db,$sql);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+    $result = mysqli_query($db, $sql);
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
     $count = mysqli_num_rows($result);
 
     // If result matched $myusername and $mypassword, table row must be 1 row
-
-    if(!isset($_SESSION['uname'])){
+    if ($count == 1) {
         session_start();
-        $_SESSION["username"] = $myusername;
-        header('Location: home/');
+        $_SESSION["login_user"] = $myusername;
+        $_SESSION['username'] = $myusername;
 
+        header("location: home/");
+    } else {
+        echo '<script type="text/javascript">',
+        'window.onload = function() {
+        ErrorLogin();
+        }',
+        '</script>';
     }
 }
 ?>
@@ -28,12 +35,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-blue.min.css" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-blue.min.css"/>
     <!-- Javascript Files-->
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
     <script src="assets/js/customLinks.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Login</title>
 </head>
 <hgroup>
     <h1>STCC Social Media </h1>
@@ -54,7 +63,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
         Login
     </button>
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="button" onclick="userRegister()">
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="button"
+            onclick="userRegister()">
         Sign up
     </button>
 </form>

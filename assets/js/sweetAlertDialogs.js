@@ -13,5 +13,12 @@ function ErrorAdd() {
         type: "error",
     })
 }
+function ErrorLogin() {
+    Swal.fire({
+        title: "Uh Oh!",
+        text: "Looks like you are not using the right username or password",
+        type: "error",
+    })
+}
 
 
