@@ -17,9 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // If result matched $myusername and $mypassword, table row must be 1 row
     if ($count == 1) {
         session_start();
-        $_SESSION["login_user"] = $myusername;
         $_SESSION['username'] = $myusername;
-
         header("location: home/");
     } else {
         echo '<script type="text/javascript">',
