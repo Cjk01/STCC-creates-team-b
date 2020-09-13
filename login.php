@@ -10,8 +10,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "SELECT email FROM users WHERE email = '$myusername' and password = MD5('$mypassword')";
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-    $active = $row['active'];
-    session_id($_SESSION['Email']);
 
     $count = mysqli_num_rows($result);
 
@@ -20,7 +18,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     if(!isset($_SESSION['uname'])){
         session_start();
         $_SESSION["username"] = $myusername;
-        echo session_id();
         header('Location: home/');
 
     }
@@ -28,9 +25,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE HTML>
 <head>
+    <!-- CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-blue.min.css" />
+    <!-- Javascript Files-->
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
     <script src="assets/js/customLinks.js" type="text/javascript"></script>
