@@ -72,7 +72,7 @@ include('../auth/session.php');
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
           <h3><?php
               echo "User: " , $login_session;
-           ?>Name &amp; Title</h3>
+           ?><br>Name &amp; Title</h3>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
