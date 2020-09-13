@@ -1,6 +1,7 @@
 <?php
 //Verify info here
 include("auth/config.php");
+include('assets/reqJSSA2.php');
 if($_SERVER["REQUEST_METHOD"] == "POST") { 
 //now to check if the entered values fit the proper format
 $first = $_POST['fname'];
@@ -25,6 +26,15 @@ if (mysqli_query($db, $insert)) {
     echo "Error: " . $insert . "<br>" . mysqli_error($db);
   }
 }
+else {
+//    echo '<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>';
+//    echo 'setTimeout(function () { swal("Error ' . $email . '","is invalid, please use an email from STCC","error");';
+    echo '<script type="text/javascript">',
+    'window.onload = function() {
+    ErrorAdd();
+    }',
+    '</script>';
+}
 }
 
 ?>
@@ -33,10 +43,12 @@ if (mysqli_query($db, $insert)) {
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-blue.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="assets/js/main.js" type="text/javascript"></script>
     <script src="assets/js/customLinks.js" type="text/javascript"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>Login</title>
 </head>
 <hgroup>
     <h1>STCC Social Media </h1>
