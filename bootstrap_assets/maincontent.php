@@ -1,3 +1,6 @@
+<?php
+include('../assets/phpFiles/Bootstrap_CSS_JS.php');
+?>
 <!DOCTYPE html>
 <html>
 
@@ -5,10 +8,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>STCC social</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
 <body style="background: url('assets/img/bkgrd_oy.png') center;">
@@ -20,10 +19,12 @@
             <div class="collapse navbar-collapse" id="navcol-1"
                 style="width: 663px;">
                 <ul class="nav navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="https://www.stcc.edu/" style="color: rgb(228,231,109);text-shadow: 2px 1px 4px;"><strong>STCC Main</strong></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="https://advisorweb.stcc.edu/WebAdvisor/WebAdvisor?TYPE=M&amp;PID=CORE-WBMAIN&amp;TOKENIDX=1017827741" style="color: rgb(228,231,109);text-shadow: 2px 1px 4px;"><strong>WebAdvisor</strong></a></li>
-                    <li
-                        class="nav-item"><a class="nav-link active" href="https://stcc.blackboard.com/webapps/login/" style="color: rgb(228,231,109);text-shadow: 2px 1px 4px;"><strong>Blackboard</strong></a></li>
+                    <?php
+                    include('../assets/phpFiles/MainNavbar.php');
+                    ?>
+<!--                    <li class="nav-item"><a class="nav-link" href="https://www.stcc.edu/" style="color: rgb(228,231,109);text-shadow: 2px 1px 4px;"><strong>STCC Main</strong></a></li>-->
+<!--                    <li class="nav-item"><a class="nav-link" href="https://advisorweb.stcc.edu/WebAdvisor/WebAdvisor?TYPE=M&amp;PID=CORE-WBMAIN&amp;TOKENIDX=1017827741" style="color: rgb(228,231,109);text-shadow: 2px 1px 4px;"><strong>WebAdvisor</strong></a></li>-->
+<!--                    <li lass="nav-item"><a class="nav-link" href="https://stcc.blackboard.com/webapps/login/" style="color: rgb(228,231,109);text-shadow: 2px 1px 4px;"><strong>Blackboard</strong></a></li>-->
                 </ul>
             </div>
         </div>
@@ -56,9 +57,6 @@
         </div>
     </div>
     <!-- End: 1 Row 4 Columns -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
