@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 <!DOCTYPE HTML>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <title>Login</title>
 </head>
@@ -52,13 +53,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <form action="" method="post">
     <div class="group">
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="Email" name="fname">
+            <input class="mdl-textfield__input" type="text" id="fname" name="fname">
             <label class="mdl-textfield__label" for="password">First Name</label>
         </div>
     </div>
     <div class="group">
         <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="Email" name="lname">
+            <input class="mdl-textfield__input" type="text" id="lname" name="lname">
             <label class="mdl-textfield__label" for="password">Last Name</label>
         </div>
     </div>
