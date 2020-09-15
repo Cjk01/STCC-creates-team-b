@@ -1,5 +1,5 @@
 <?php
-include('../assets/phpFiles/Bootstrap_CSS_JS.php');
+include('assets/phpFiles/Bootstrap_CSS_JS.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,7 +15,7 @@ include('../assets/phpFiles/Bootstrap_CSS_JS.php');
     <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background: #9d0101;">
         <div class="container">
             <a class="navbar-brand" href="#" style="text-shadow: 3px 1px 3px;color: rgb(255,252,252);">
-                <!--Meant to redirect to home page; Requires URL--><img style="background: url('assets/img/Snek co transparent resize.png') no-repeat;background-size: contain;">STCC Social<br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <!--Meant to redirect to home page; Requires URL--><img style="background: url('assets/img/Snek co transparent resize_large.png') no-repeat;background-size: contain;">STCC Social<br></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div
                 class="collapse navbar-collapse" id="navcol-1" style="width: 663px;">
                 <ul class="nav navbar-nav">
@@ -23,11 +23,6 @@ include('../assets/phpFiles/Bootstrap_CSS_JS.php');
                     include('../assets/phpFiles/MainNavbar.php');
                     ?>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-                </ul>
-
         </div>
         </div>
     </nav>

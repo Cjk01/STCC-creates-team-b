@@ -1,8 +1,8 @@
 <?php
 //Verify info here
 include("../auth/config.php");
-include('../assets/phpFiles/MDSW_CSS_JS.php');
-include('../assets/phpFiles/reqJSSA2.php');
+include('assets/phpFiles/MDSW_CSS_JS.php');
+include('assets/phpFiles/reqJSSA2.php');
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //now to check if the entered values fit the proper format
     $first = $_POST['fname'];
@@ -87,6 +87,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class="group">
 
     <footer>
-        <img src="../assets/images/Springfield_Technical_Community_College_(STCC)_seal.png" alt="STCC Logo">
+        <img src="assets/img/Springfield_Technical_Community_College_(STCC)_seal.png" alt="STCC Logo">
         <p>Welcome to STCC Social Media login</p>
     </footer>

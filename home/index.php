@@ -1,7 +1,7 @@
 <?php
-include('../assets/phpFiles/Bootstrap_CSS_JS.php');
+include('assets/phpFiles/Bootstrap_CSS_JS.php');
 include("../auth/config.php");
-include('../assets/phpFiles/reqJSSA2.php');
+include('assets/phpFiles/reqJSSA2.php');
 ?>
 <!DOCTYPE html>
 <html class="text-justify" lang="en">
@@ -13,8 +13,13 @@ include('../assets/phpFiles/reqJSSA2.php');
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand bg-light navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#" style="filter: contrast(130%);">STCC Creates</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+    <nav class="navbar navbar-expand navigation-clean customCSS">
+        <div class="container">
+            <a class="navbar-brand" >
+                <img src="https://stcc.edu/media/site-assets/images/STCCWhite.png" alt="STCC Logo" width="200">
+                <a class="navbar-brand customCSS" href="#" style="filter: contrast(130%);">STCC Creates</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            </a>
+
 <!--            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" role="button" href="#">Sign In</a></div>-->
         </div>
     </nav>
@@ -23,7 +28,7 @@ include('../assets/phpFiles/reqJSSA2.php');
         <div class="container">
             <div class="row">
                 <div class="col-5 col-sm-4 col-md-5 col-lg-2 col-xl-4 offset-0 offset-lg-6 offset-xl-7 mx-auto">
-                    <h6 class="mb-5" style="text-shadow: 0px 0px 2px;"><strong>Danger Noodles present</strong><br></h6><img class="img-fluid visible" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" style="background: url('assets/img/Snek co transparent resize.png') center / cover no-repeat;" src="assets/img/Snek co transparent resize.png">
+                    <h6 class="mb-5" style="text-shadow: 0px 0px 2px;"><strong>Danger Noodles present</strong><br></h6><img class="img-fluid visible" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" style="background: url('assets/img/Snek co transparent resize_large.png') center / cover no-repeat;" src="assets/img/Snek co transparent resize_large.png">
                     <figure class="figure"></figure>
                 </div>
                 <div class="col-xl-9 offset-lg-4 mx-auto justify-content-center" style="border-style: none;text-shadow: 0px 1px;text-align: center;">
@@ -36,7 +41,6 @@ include('../assets/phpFiles/reqJSSA2.php');
                             <div class="col-12 col-md-3">
                                 <button class="btn btn-primary btn-block btn-lg btn-block" type="button" onclick="userLogin();">Login </button>
                                 <button class="btn btn-primary btn-block btn-lg" type="button" onclick="userRegister();">Sign up!</button>
-
                             </div>
                         </div>
 
@@ -52,7 +56,7 @@ include('../assets/phpFiles/reqJSSA2.php');
             <div class="container">
                 <div class="row justify-content-center">
                     <!-- Start: Services -->
-                    <div class="col-sm-4 col-md-3 item"><img style="background: url('../assets/images/Springfield_Technical_Community_College_(STCC)_seal.png') center no-repeat;"></div>
+                    <div class="col-sm-4 col-md-3 item"><img style="background: url('assets/img/Springfield_Technical_Community_College_(STCC)_seal.png') center no-repeat;"></div>
                     <!-- End: Services -->
                     <!-- Start: About -->
                     <div class="col-sm-4 col-md-3 item">
@@ -75,7 +79,8 @@ include('../assets/phpFiles/reqJSSA2.php');
                     </div>
                     <!-- End: Careers -->
                     <!-- Start: Social Icons -->
-                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a>
+<!--                    <div class="col-lg-3 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-github"></i></a>-->
+                    <div class="col-lg-3 item social"><a href="https://github.com/Cjk01/STCC-creates-team-b"><i class="icon ion-social-github"></i></a>
                         <p class="copyright">Danger Noodles © 2020</p>
                     </div>
                     <!-- End: Social Icons -->

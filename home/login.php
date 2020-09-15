@@ -1,7 +1,7 @@
 <?php
 include("../auth/config.php");
-include('../assets/phpFiles/MDSW_CSS_JS.php');
-include('../assets/phpFiles/reqJSSA2.php');
+include('assets/phpFiles/MDSW_CSS_JS.php');
+include('assets/phpFiles/reqJSSA2.php');
 
 session_start();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -61,6 +61,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </button>
 </form>
 <footer>
-    <img src="../assets/images/Springfield_Technical_Community_College_(STCC)_seal.png" alt="STCC Logo">
+    <img src="assets/img/Springfield_Technical_Community_College_(STCC)_seal.png" alt="STCC Logo">
     <p>Welcome to STCC Social Media login</p>
 </footer>

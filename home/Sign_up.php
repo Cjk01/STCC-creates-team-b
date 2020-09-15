@@ -21,7 +21,7 @@ include('../assets/phpFiles/Bootstrap_CSS_JS.php');
         <div class="container">
             <div class="row">
                 <div class="col-5 col-sm-4 col-md-5 col-lg-2 col-xl-4 offset-0 offset-lg-6 offset-xl-7 mx-auto">
-                    <h6 class="mb-5" style="text-shadow: 0px 0px 2px;"><strong>Danger Noodles present</strong><br></h6><img class="img-fluid visible" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" style="background: url('assets/img/Snek co transparent resize.png') center / cover no-repeat;" src="assets/img/Snek co transparent resize.png">
+                    <h6 class="mb-5" style="text-shadow: 0px 0px 2px;"><strong>Danger Noodles present</strong><br></h6><img class="img-fluid visible" data-toggle="tooltip" data-bs-tooltip="" data-placement="right" style="background: url('assets/img/Snek co transparent resize_large.png') center / cover no-repeat;" src="assets/img/Snek co transparent resize_large.png">
                     <figure
                         class="figure"></figure>
                 </div>
@@ -45,7 +45,7 @@ include('../assets/phpFiles/Bootstrap_CSS_JS.php');
             <div class="container">
                 <div class="row justify-content-center">
                     <!-- Start: Services -->
-                    <div class="col-sm-4 col-md-3 item"><img style="background: url('../assets/images/Springfield_Technical_Community_College_(STCC)_seal.png') center no-repeat;"></div>
+                    <div class="col-sm-4 col-md-3 item"><img style="background: url('assets/img/Springfield_Technical_Community_College_(STCC)_seal.png') center no-repeat;"></div>
                     <!-- End: Services -->
                     <!-- Start: About -->
                     <div class="col-sm-4 col-md-3 item">
