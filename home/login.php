@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 ?>
 <!DOCTYPE HTML>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
 <head>
     <title>Login</title>

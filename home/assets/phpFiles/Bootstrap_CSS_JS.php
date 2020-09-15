@@ -1,5 +1,7 @@
 <?php
 ?>
+<link rel="icon" type="image/png" href="../assets/img/Snek%20co%20transparent%20resize.png"
+
 <!-- CSS -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="assets/css/styles.min.css">
