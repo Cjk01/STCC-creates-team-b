@@ -1,7 +1,7 @@
 <?php
 ?>
 <!-- favicon -->
-<link rel="icon" type="image/png" href="../img/Snek%20co%20transparent%20resize.png"
+<link rel="icon" type="image/png" href="../home/assets/img/Snek%20co%20transparent%20resize.png"
 <!-- CSS Files -->
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
