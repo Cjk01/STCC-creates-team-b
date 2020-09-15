@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         return (substr($string, -$len) === $endString);
     }
 
-    if (endsWith($email, 'student.stcc.edu') and strlen($first) != 0 and strlen($last) != 0 and strlen($pw) > 6) {
+    if (endsWith($email, 'stcc.edu') and strlen($first) != 0 and strlen($last) != 0 and strlen($pw) > 6) {
 // when the 'create account' button is pressed, all the input values are inserted into the db if they are in the correct format
         $insert = "INSERT INTO users (firstName, lastName, email, password, groups) VALUES ('$first', '$last', '$email', MD5('$pw'), '')";
 
