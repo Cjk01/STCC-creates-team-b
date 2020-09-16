@@ -39,8 +39,9 @@ include('assets/phpFiles/reqJSSA2.php');
                     <form>
                         <div class="form-row justify-content-center" style="text-align: center;" >
                             <div class="col-12 col-md-3">
-                                <button class="btn btn-primary btn-block btn-lg btn-block" type="button" onclick="userLogin();">Login </button>
-                                <button class="btn btn-primary btn-block btn-lg" type="button" onclick="userRegister();">Sign up!</button>
+                                <button class="btn btn-primary btn-block btn-lg btn-block" type="button" onclick="visitForum();">Visit our forum </button>
+<!--                                <button class="btn btn-primary btn-block btn-lg btn-block" type="button" onclick="userLogin();">Login </button>-->
+<!--                                <button class="btn btn-primary btn-block btn-lg" type="button" onclick="userRegister();">Sign up!</button>-->
                             </div>
                         </div>
 

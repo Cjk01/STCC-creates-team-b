@@ -4,3 +4,6 @@ function userLogin(){
 function userRegister() {
         window.location = "register.php";
 }
+function visitForum() {
+        window.location = "../forum";
+}
