@@ -4,12 +4,12 @@ Colours and backgrounds for common.css
 -------------------------------------------------------------- */
 
 html, body {
-	color: #4f171d;
-	background-color: #af965b;
+	color: #536482;
+	background-color: #F5F7FA;
 }
 
 h1 {
-	color: #f3eb8d;
+	color: #FFFFFF;
 }
 
 h2 {
@@ -17,13 +17,13 @@ h2 {
 }
 
 h3 {
-	border-bottom-color: #840c0c;
-	color: #840c0c;
+	border-bottom-color: #CCCCCC;
+	color: #115098;
 }
 
 hr {
 	border-color: #FFFFFF;
-	border-top-color: #b4c4d1;
+	border-top-color: #CCCCCC;
 }
 
 /*
@@ -31,16 +31,16 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: #f3eb8d; }
-a:hover { color: #f55709; }
+a { color: black !important; }
+a:hover { color: #D31141; }
 
 /* Links on gradient backgrounds */
 .forumbg .header a, .forabg .header a, th a {
-	color: #f3eb8d;
+	color: #FFFFFF;
 }
 
 .forumbg .header a:hover, .forabg .header a:hover, th a:hover {
-	color: #f55709;
+	color: #A8D8FF;
 }
 
 /* Notification mark read link */
@@ -81,34 +81,34 @@ a:hover { color: #f55709; }
 /* Round cornered boxes and backgrounds
 ---------------------------------------- */
 .wrap {
-	background-color: #ebe3c8;
-	border-color: #840c0c;
+	background-color: #FFF;
+	border-color: #E6E9ED;
 }
 
 .headerbar {
-	color: #f3eb8d;
+	color: #FFFFFF;
 }
 
 .headerbar, .forumbg {
-	background-color: #840c0c;
-	background-image: -webkit-linear-gradient(top, #840c0c 0%, #840c0c 2px, #840c0c 92px, #840c0c 100%);
-	background-image: linear-gradient(to bottom, #840c0c 0%,#0076840c0cB1 2px,#840c0c 92px,#840c0c 100%);
+	background-color: #12A3EB;
+	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #0076B1 2px, #12A3EB 92px, #12A3EB 100%);
+	background-image: linear-gradient(to bottom, #6ACEFF 0%,#0076B1 2px,#12A3EB 92px,#12A3EB 100%);
 	background-repeat: repeat-x;
 }
 
 .forabg {
-	background-color: #840c0c;
-	background-image: -webkit-linear-gradient(top, #840c0c 0%, #840c0c 2px, #970f0f 92px, #840c0c 100%);
-	background-image: linear-gradient(to bottom, #840c0c 0%,#840c0c 2px,#970f0f 92px,#840c0c 100%);
+	background-color: #0076B1;
+	background-image: -webkit-linear-gradient(top, #6ACEFF 0%, #12A3EB 2px, #0076B1 92px, #0076B1 100%);
+	background-image: linear-gradient(to bottom, #6ACEFF 0%,#12A3EB 2px,#0076B1 92px,#0076B1 100%);
 	background-repeat: repeat-x;
 }
 
 .navbar {
-	background-color: #840c0c;
+	background-color: #CADCEB;
 }
 
 .panel {
-	background-color: #faf1db;
+	background-color: #ECF1F3;
 	color: #28313F;
 }
 
@@ -320,9 +320,9 @@ Colours and backgrounds for content.css
 -------------------------------------------------------------- */
 
 ul.forums {
-	background-color: #caad68; /* Old browsers */ /* FF3.6+ */
-	background-image: -webkit-linear-gradient(top, #caa95b 0%, #caad68 100%);
-	background-image: linear-gradient(to bottom, #caa95b 0%,#caad68 100%); /* W3C */
+	background-color: #EEF5F9; /* Old browsers */ /* FF3.6+ */
+	background-image: -webkit-linear-gradient(top, #D2E0EB 0%, #EEF5F9 100%);
+	background-image: linear-gradient(to bottom, #D2E0EB 0%,#EEF5F9 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#D2E0EB', endColorstr='#EEF5F9',GradientType=0 ); /* IE6-9 */
 }
 
@@ -331,7 +331,7 @@ ul.topiclist li {
 }
 
 ul.topiclist dd {
-	border-left-color: #840c0c;
+	border-left-color: #FFFFFF;
 }
 
 .rtl ul.topiclist dd {
@@ -340,8 +340,8 @@ ul.topiclist dd {
 }
 
 li.row {
-	border-top-color:  #F6F4D0;
-	border-bottom-color: #d2560e;
+	border-top-color:  #FFFFFF;
+	border-bottom-color: #00608F;
 }
 
 li.row strong {
@@ -349,7 +349,7 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #821b03;
+	background-color: #F6F4D0;
 }
 
 li.row:hover dd {
