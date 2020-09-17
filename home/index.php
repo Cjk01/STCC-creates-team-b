@@ -23,7 +23,7 @@ include('assets/phpFiles/reqJSSA2.php');
 <!--            <div class="collapse navbar-collapse" id="navcol-1"><a class="btn btn-primary ml-auto" role="button" href="#">Sign In</a></div>-->
         </div>
     </nav>
-    <header data-toggle="tooltip" data-bs-tooltip="" class="masthead text-white text-center" style="background: url('assets/img/blutint.png');">
+    <header data-toggle="tooltip" data-bs-tooltip="" class="masthead text-white text-center" style="background: url('assets/img/STCC yellow bg.png');">
         <header class="overlay"></header>
         <div class="container">
             <div class="row">
