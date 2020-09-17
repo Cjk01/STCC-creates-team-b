@@ -31,7 +31,7 @@ hr {
 Colours and backgrounds for links.css
 -------------------------------------------------------------- */
 
-a { color: black !important; }
+/*a { color: black !important; }*/
 a:hover { color: #D31141; }
 
 /* Links on gradient backgrounds */
@@ -327,11 +327,11 @@ ul.forums {
 }
 
 ul.topiclist li {
-	color: #4C5D77;
+	color: #122541;
 }
 
 ul.topiclist dd {
-	border-left-color: #FFFFFF;
+	border-left-color: #840c0c;
 }
 
 .rtl ul.topiclist dd {
@@ -340,8 +340,8 @@ ul.topiclist dd {
 }
 
 li.row {
-	border-top-color:  #FFFFFF;
-	border-bottom-color: #00608F;
+	border-top-color:  #F6F4D0;
+	border-bottom-color: #d2560e;
 }
 
 li.row strong {
@@ -349,20 +349,20 @@ li.row strong {
 }
 
 li.row:hover {
-	background-color: #F6F4D0;
+	background-color: #e3d19b;
 }
 
 li.row:hover dd {
-	border-left-color: #CCCCCC;
+	border-left-color: #840c0c;
 }
 
 .rtl li.row:hover dd {
-	border-right-color: #CCCCCC;
+	border-right-color: #840c0c;
 	border-left-color: transparent;
 }
 
 li.header dt, li.header dd {
-	color: #FFFFFF;
+	color: #f3eb8d;
 }
 
 /* Post body styles
