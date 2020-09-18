@@ -31,7 +31,7 @@
               <div class="col-md-10 col-lg-6 text-center text-md-left margins">
                 <div class="white-text">
                   <div class="wow fadeInLeft" data-wow-delay="0.3s">
-                    <h1 class="h1-responsive font-bold mt-sm-5">Welcome to Team Danger Noodle's</h1>
+                    <h1 class="h1-responsive font-bold mt-sm-5">Welcome to Team Danger Noodles</h1>
                     <div class="h6">
                         Click the button below to visit the STCC social forums
                     </div>
