@@ -1,0 +1,60 @@
+<!-- INCLUDE overall_header.html -->
+<!--<link rel="stylesheet" type="text/css" href="https://stccsocial.thebeast.pro/home/assets/css/style.css">-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-blue.min.css"/>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+<form class="customFormDude"action="{S_LOGIN_ACTION}" method="post" id="login" data-focus="<!-- IF S_ADMIN_AUTH -->{PASSWORD_CREDENTIAL}<!-- ELSE -->{USERNAME_CREDENTIAL}<!-- ENDIF -->">
+<div class="panel">
+	<div class="inner">
+
+	<div class="content contentCustom">
+		<h2 class="login-title"><!-- IF LOGIN_EXPLAIN -->{LOGIN_EXPLAIN}<!-- ELSE -->{L_LOGIN}<!-- ENDIF --></h2>
+		<div class="group">
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" type="text" name="{USERNAME_CREDENTIAL}" id="{USERNAME_CREDENTIAL}"/>
+				<label class="mdl-textfield__label" for="{USERNAME_CREDENTIAL}">Username</label>
+			</div>
+		</div>
+		<div class="group">
+			<div class="mdl-textfield mdl-js-textfield">
+				<input class="mdl-textfield__input" type="password" id="{PASSWORD_CREDENTIAL}" name="{PASSWORD_CREDENTIAL}" autocomplete="off"/>
+				<label class="mdl-textfield__label" for="{PASSWORD_CREDENTIAL}">Password</label>
+			</div>
+		</div>
+		{S_LOGIN_REDIRECT}
+		{S_FORM_TOKEN_LOGIN}
+		{S_HIDDEN_FIELDS}	<button  name="login" tabindex="6" value="{L_LOGIN}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+			Login
+		</button>
+</form>
+<footer>
+	<img src="https://stccsocial.thebeast.pro/home/assets/img/Springfield_Technical_Community_College_(STCC)_seal.png" alt="STCC Logo">
+	<p>Welcome to STCC Social Media login</p>
+</footer>
+	<!-- IF not S_ADMIN_AUTH and PROVIDER_TEMPLATE_FILE -->
+		<!-- INCLUDE {PROVIDER_TEMPLATE_FILE} -->
+	<!-- ENDIF -->
+	</div>
+</div>
+
+
+<!-- IF not S_ADMIN_AUTH and S_REGISTER_ENABLED -->
+	<div class="panel">
+		<div class="inner">
+
+		<div class="content">
+			<h3>{L_REGISTER}</h3>
+			<p>{L_LOGIN_INFO}</p>
+			<p><strong><a href="{U_TERMS_USE}">{L_TERMS_USE}</a> | <a href="{U_PRIVACY}">{L_PRIVACY}</a></strong></p>
+			<hr class="dashed" />
+			<p><a href="{U_REGISTER}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accen">{L_REGISTER}</a></p>
+		</div>
+
+		</div>
+	</div>
+<!-- ENDIF -->
+
+</form>
+
+<!-- INCLUDE overall_footer.html -->
